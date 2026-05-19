@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RootConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/MainConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.example.volt.map.MapView
+            android:id="@+id/MapView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/LineViewRight"
+            app:layout_constraintStart_toEndOf="@id/LineViewLeft"
+            app:layout_constraintTop_toTopOf="parent" >
+        </com.example.volt.map.MapView>
+
+        <TextView
+            android:id="@+id/WarningsHeaderTextView"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/rounded_header"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/warnings_recycler_view_header"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/LineViewLeft"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/WarningsRecyclerView"
+            android:layout_width="285dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/rounded_recycler_view"
+            app:layout_constraintStart_toEndOf="@id/LineViewLeft"
+            app:layout_constraintTop_toBottomOf="@+id/WarningsHeaderTextView" />
+
+        <Switch
+            android:id="@+id/AudioFeedbackSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="@string/switch_text"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/LineViewRight"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="VisualLintBounds" />
+
+        <ImageView
+            android:id="@+id/NearestElevatorImageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginBottom="55dp"
+            android:contentDescription="@string/nearest_elevator_image_view_content_descriptor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/LineViewLeft"
+            app:srcCompat="@drawable/elevator" />
+
+        <TextView
+            android:id="@+id/NearestElevatorTextView"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/nearest_elevator_image_view_content_descriptor"
+            app:layout_constraintStart_toStartOf="@+id/NearestElevatorImageView"
+            app:layout_constraintTop_toBottomOf="@+id/NearestElevatorImageView" />
+
+        <ImageView
+            android:id="@+id/NearestWomenToiletImageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginBottom="55dp"
+            android:contentDescription="@string/nearest_women_image_view_content_descriptor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/NearestElevatorImageView"
+            app:srcCompat="@drawable/women_toilet" />
+
+        <TextView
+            android:id="@+id/NearestWomenToiletTextView"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/nearest_women_image_view_content_descriptor"
+            app:layout_constraintStart_toStartOf="@id/NearestWomenToiletImageView"
+            app:layout_constraintTop_toBottomOf="@id/NearestWomenToiletImageView" />
+
+        <ImageView
+            android:id="@+id/NearestMenToiletImageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginBottom="55dp"
+            android:contentDescription="@string/nearest_men_image_view_content_descriptor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/NearestWomenToiletImageView"
+            app:srcCompat="@drawable/men_toilet" />
+
+        <TextView
+            android:id="@+id/NearestMenToiletTextView"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/nearest_men_image_view_content_descriptor"
+            app:layout_constraintStart_toStartOf="@id/NearestMenToiletImageView"
+            app:layout_constraintTop_toBottomOf="@id/NearestMenToiletImageView" />
+
+        <ImageView
+            android:id="@+id/NearestShelterImageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginBottom="55dp"
+            android:contentDescription="@string/nearest_men_image_view_content_descriptor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/NearestMenToiletImageView"
+            app:srcCompat="@drawable/missile" />
+
+        <TextView
+            android:id="@+id/NearestShelterToiletTextView"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Closest Shelter"
+            app:layout_constraintStart_toStartOf="@id/NearestShelterImageView"
+            app:layout_constraintTop_toBottomOf="@id/NearestShelterImageView" />
+
+        <ImageView
+            android:id="@+id/InfoImageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginBottom="55dp"
+            android:contentDescription="@string/nearest_men_image_view_content_descriptor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/NearestShelterImageView"
+            app:srcCompat="@drawable/info" />
+
+        <TextView
+            android:id="@+id/InfoTextView"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Info"
+            app:layout_constraintStart_toStartOf="@id/InfoImageView"
+            app:layout_constraintTop_toBottomOf="@id/InfoImageView" />
+
+        <ImageView
+            android:id="@+id/VoiceImageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginBottom="55dp"
+            android:contentDescription="@string/nearest_men_image_view_content_descriptor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/InfoImageView"
+            app:srcCompat="@drawable/voice" />
+
+        <TextView
+            android:id="@+id/VoiceTextView"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Voice"
+            app:layout_constraintStart_toStartOf="@id/VoiceImageView"
+            app:layout_constraintTop_toBottomOf="@id/VoiceImageView" />
+
+        <ImageView
+            android:id="@+id/ExitImageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="55dp"
+            android:contentDescription="@string/close_image_view_content_descriptor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/LineViewRight"
+            app:srcCompat="@drawable/close_big" />
+
+        <TextView
+            android:id="@+id/ExitTextView"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/close_image_view_content_descriptor"
+            app:layout_constraintStart_toStartOf="@+id/ExitImageView"
+            app:layout_constraintTop_toBottomOf="@id/ExitImageView" />
+
+        <com.example.volt.popup.SlidingPopupView
+            android:id="@+id/DestinationPopupViewLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/LineViewRight"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/LineViewLeft"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.volt.popup.SlidingPopupView
+            android:id="@+id/DestinationPopupViewRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/LineViewRight"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/LineViewLeft"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ernestoyaquello.dragdropswiperecyclerview.DragDropSwipeRecyclerView
+            android:id="@+id/DestinationsRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="100dp"
+            android:background="@color/white"
+            android:contentDescription="@string/recycler_view_content_descriptor"
+            android:visibility="visible"
+            app:item_layout="@layout/destinations_recycler_view_item"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/LineViewRight"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="VisualLintBounds" />
+
+        <SearchView
+            android:id="@+id/DestinationsSearchView"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:background="@color/white"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/search_view_hint"
+            app:layout_constraintEnd_toStartOf="@+id/LineViewLeft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ListView
+            android:id="@+id/DestinationsListView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/LineViewLeft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DestinationsSearchView" />
+
+        <View
+            android:id="@+id/lineViewLeft"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:background="@color/app_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/DestinationsRecyclerView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/LineViewRight"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="250dp"
+            android:background="@color/app_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/LineViewLeft"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:background="@color/app_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/GoButtonWrapper"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/LineViewRight"
+            app:layout_constraintTop_toBottomOf="@id/DestinationsRecyclerView" />
+
+        <Button
+            android:id="@+id/GoButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/rectangular_button_ripple"
+            android:enabled="false"
+            android:text="@string/go_button_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lineViewLeft"
+            app:layout_constraintTop_toBottomOf="@+id/DestinationsRecyclerView" />
+
+        <!--
+        <Button
+            android:id="@+id/EchoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="voice"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="650dp"
+            tools:layout_editor_absoluteY="69dp" />-->
+
+        <com.example.volt.screen.SimpleFAQView
+            android:id="@+id/SimpleFAQView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="6dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

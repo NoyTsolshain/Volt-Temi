@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="pin_button_view">
+        <attr name="display_name" format="string"/>
+        <attr name="internal_name" format="string"/>
+        <attr name="description" format="string"/>
+        <attr name="building" format="string"/>
+        <attr name="floor" format="string"/>
+        <attr name="image" format="reference"/>
+        <attr name="image_content_descriptor" format="string"/>
+    </declare-styleable>
+</resources>

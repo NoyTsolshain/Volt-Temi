@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="app_icon">#00ACE4</color>
+    <color name="pastel_blue">#70D6FF</color>
+    <color name="pastel_pink">#FF70A6</color>
+    <color name="pastel_orange">#FF9770</color>
+    <color name="pastel_light_orange">#FFD670</color>
+    <color name="pastel_yellow">#E9FF70</color>
+    <color name="button_purple">#FF6200EE</color>
+    <color name="button_ripple">#1F000000</color>
+    <color name="warning_red">#AC1616</color>
+    <color name="warning_orange">#B2651B</color>
+    <color name="warning_yellow">#A6A519</color>
+    <color name="warning_green">#F244A11C</color>
+    <color name="opaque_white">#D9FFFFFF</color>
+    <color name="rounded_recycler_view_border_grey">#DDDDDD</color>
+    <color name="eggshell">#F0EAD6</color>
+    <color name="pin_red">#FFE91C23</color>
+    <color name="pin_blue">#FF499DC4</color>
+    <color name="pin_yellow">#FFFFEB3B</color>
+    <color name="pin_orange">#FFFF5722</color>
+    <color name="pin_purple">#FF9C27B0</color>
+    <color name="pin_green">#FF468949</color>
+    <color name="pin_pink">#FFD7A1E0</color>
+</resources>

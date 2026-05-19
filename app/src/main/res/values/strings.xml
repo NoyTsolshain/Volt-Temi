@@ -1,0 +1,203 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Volt</string>
+
+    <!-- Instructions Screen -->
+    <string name="initial_text">PRESS THE BUTTON\nOR SAY HELLO TEMI</string>
+    <string name="continue_button_text">Continue</string>
+
+    <!-- Destinations -->
+    <string name="home_base_display">Home Base</string>
+    <string name="home_base_internal">home base</string>
+    <string name="room_329_display">Room 329</string>
+    <string name="room_329_internal">room 329</string>
+    <string name="room_328_display">Room 328</string>
+    <string name="room_328_internal">room 328</string>
+    <string name="room_327_display">Room 327</string>
+    <string name="room_327_internal">room 327</string>
+    <string name="room_326_display">Room 326</string>
+    <string name="room_326_internal">room 326</string>
+    <string name="room_325_display">Room 325</string>
+    <string name="room_325_internal">room 325</string>
+    <string name="room_323_display">Room 323</string>
+    <string name="room_323_internal">room 323</string>
+    <string name="room_322_display">Room 322</string>
+    <string name="room_322_internal">room 322</string>
+    <string name="room_321_display">Room 321</string>
+    <string name="room_321_internal">room 321</string>
+    <string name="room_319_1_display">Room 319 A</string>
+    <string name="room_319_1_internal">room 319 1</string>
+    <string name="room_319_display">Room 319</string>
+    <string name="room_319_internal">room 319</string>
+    <string name="room_318_display">Room 318</string>
+    <string name="room_318_internal">room 318</string>
+    <string name="room_317_display">Room 317</string>
+    <string name="room_317_internal">room 317</string>
+    <string name="room_315_display">Room 315</string>
+    <string name="room_315_internal">room 315</string>
+    <string name="room_307_display">Room 307</string>
+    <string name="room_307_internal">room 307</string>
+    <string name="room_306_display">Room 306</string>
+    <string name="room_306_internal">room 306</string>
+    <string name="room_305_display">Room 305</string>
+    <string name="room_305_internal">room 305</string>
+    <string name="women_restroom_1_display">Women\'s Restroom 1</string>
+    <string name="women_restroom_1_internal">women restroom 1</string>
+    <string name="men_restroom_1_display">Men\'s Restroom 1</string>
+    <string name="men_restroom_1_internal">men restroom 1</string>
+    <string name="women_restroom_2_display">Women\'s Restroom 2</string>
+    <string name="women_restroom_2_internal">women restroom 2</string>
+    <string name="men_restroom_2_display">Men\'s Restroom 2</string>
+    <string name="men_restroom_2_internal">men restroom 2</string>
+    <string name="women_restroom_3_display">Women\'s Restroom 3</string>
+    <string name="women_restroom_3_internal">women restroom 3</string>
+    <string name="men_restroom_3_display">Men\'s Restroom 3</string>
+    <string name="men_restroom_3_internal">men\'s restroom 3</string>
+    <string name="hsds_lab_display">High Speed Digital Systems Lab</string>
+    <string name="hsds_lab_internal">hsds lab</string>
+    <string name="communication_lab_display">Communications Lab</string>
+    <string name="communication_lab_internal">communications lab</string>
+    <string name="pearl_lab_display">Pearl Lab</string>
+    <string name="pearl_lab_internal">pearl lab</string>
+    <string name="shelter_1_display">Shelter 1</string>
+    <string name="shelter_1_internal">shelter 1</string>
+    <string name="shelter_2_display">Shelter 2</string>
+    <string name="shelter_2_internal">shelter 2</string>
+    <string name="elevator_1_display">Elevator 1</string>
+    <string name="elevator_1_internal">elevator 1</string>
+    <string name="elevator_2_display">Elevator 2</string>
+    <string name="elevator_2_internal">elevator 2</string>
+    <string name="elevator_3_display">Elevator 3</string>
+    <string name="elevator_3_internal">elevator 3</string>
+    <string name="fischbach_entrance_display">Fischbach Entrance</string>
+    <string name="fischbach_entrance_internal">fischbach entrance</string>
+    <string name="ada_self_study_space_display">Ada Self-Study Space</string>
+    <string name="ada_self_study_space_internal">ada</string>
+    <string name="room_371_display">Room 371</string>
+    <string name="room_371_internal">room 371</string>
+    <string name="room_372_display">Room 372</string>
+    <string name="room_372_internal">room 372</string>
+    <string name="room_373_display">Room 373</string>
+    <string name="room_373_internal">room 373</string>
+    <string name="room_375_display">Room 375</string>
+    <string name="room_375_internal">room 375</string>
+    <string name="room_376_display">Room 376</string>
+    <string name="room_376_internal">room 376</string>
+    <string name="room_377_display">Room 377</string>
+    <string name="room_377_internal">room 377</string>
+    <string name="room_378_display">Room 378</string>
+    <string name="room_378_internal">room 378</string>
+    <string name="room_381_display">Room 381</string>
+    <string name="room_381_internal">room 381</string>
+    <string name="room_382_display">Room 382</string>
+    <string name="room_382_internal">room 382</string>
+    <string name="room_383_display">Room 383</string>
+    <string name="room_383_internal">room 383</string>
+    <string name="room_384_display">Room 384</string>
+    <string name="room_384_internal">room 384</string>
+    <string name="room_386_display">Room 386</string>
+    <string name="room_386_internal">room 386</string>
+
+    <!-- Warnings and Status -->
+    <string name="battery_warning">Battery Level: %1$d%%</string>
+    <string name="positioning_warning">Warning: TEMI needs a repositioning.\nClick here to reposition</string>
+    <string name="pushing_warning">Warning: TEMI is being dragged</string>
+    <string name="lifting_warning">Warning: TEMI is being lifted</string>
+    <string name="muted_warning">Warning: TEMI is muted</string>
+    <string name="warnings_recycler_view_header">Status</string>
+
+    <!-- Popup Screen -->
+    <string name="add_to_list_button_text">Add to List</string>
+    <string name="go_now_button_text">Go Now</string>
+
+    <!-- Pin Button View -->
+    <string name="pin_button_button_placeholder">Button placeholder</string>
+    <string name="pin_button_image_view_content_descriptor">Image descriptor</string>
+    <string name="current_location_image_view_content_descriptor">Current Location</string>
+
+    <!-- Destination Descriptions -->
+    <string name="home_base_description">The robot\'s default starting point and charging station</string>
+    <string name="room_329_description">Seminar room</string>
+    <string name="room_328_description">Projects lab - CRML</string>
+    <string name="room_327_description">Projects lab - CRML</string>
+    <string name="room_326_description">Storage room</string>
+    <string name="room_325_description">Projects lab - CRML</string>
+    <string name="room_323_description">Projects lab - CRML</string>
+    <string name="room_322_description">H. Bismuth\'s room</string>
+    <string name="room_321_description">Kobi Kohai and Orly Wigderson\'s room</string>
+    <string name="room_319_1_description">Eli Shushan\'s room</string>
+    <string name="room_319_description">Dudi Bar-On\'s room</string>
+    <string name="room_318_description">HSDS lab</string>
+    <string name="room_317_description">Mony Orbach\'s room and Oz Shmueli\'s room</string>
+    <string name="room_315_description"> </string>
+    <string name="room_307_description">Eric Herbelin\'s room</string>
+    <string name="room_306_description">Pearl lab</string>
+    <string name="room_305_description">Pearl lab</string>
+    <string name="women_restroom_1_description">Women\'s restroom</string>
+    <string name="men_restroom_1_description">Men\'s restroom</string>
+    <string name="women_restroom_2_description">Women\'s restroom</string>
+    <string name="men_restroom_2_description">Men\'s restroom</string>
+    <string name="women_restroom_3_description">Women\'s restroom</string>
+    <string name="men_restroom_3_description">Men\'s restroom</string>
+    <string name="hsds_lab_description">High speed digital systems lab</string>
+    <string name="communication_lab_description">Communications lab</string>
+    <string name="pearl_lab_description">Power electronics and renewable energy lab</string>
+    <string name="shelter_1_description">Shelter</string>
+    <string name="shelter_2_description">Shelter</string>
+    <string name="elevator_1_description">elevator</string>
+    <string name="elevator_2_description">elevator</string>
+    <string name="elevator_3_description">elevator</string>
+    <string name="fischbach_entrance_description">Fischbach building\'s main entrance</string>
+    <string name="ada_self_study_space_description">Ada self-study space</string>
+    <string name="room_371_description">Multimedia room</string>
+    <string name="room_372_description">Network operations center manager\'s room</string>
+    <string name="room_373_description">Network management and control lab</string>
+    <string name="room_375_description">High-speed networks and simulation Lab</string>
+    <string name="room_376_description">Communications room</string>
+    <string name="room_377_description">Servers and communications room</string>
+    <string name="room_378_description">Breastfeeding room</string>
+    <string name="room_381_description">Testing and measurement lab for communication networks</string>
+    <string name="room_384_description">Seminar room</string>
+
+    <!-- Buildings -->
+    <string name="fischbach_building">Fischbach Building</string>
+
+    <!-- Floors -->
+    <string name="floor_3">3rd Floor</string>
+
+    <!-- Map Image View -->
+    <string name="map_image_view_content_descriptor">Map</string>
+
+    <!-- Content Descriptors -->
+    <string name="elevator_1_pin_image_view_content_descriptor">Elevator 1</string>
+
+    <!-- Main Screen Buttons -->
+    <string name="nearest_elevator_image_view_content_descriptor">Closest\nElevator</string>
+    <string name="nearest_women_image_view_content_descriptor">Closest\nWomen\'s\nToilet</string>
+    <string name="nearest_men_image_view_content_descriptor">Closest\nMen\'s\nToilet</string>
+    <string name="close_image_view_content_descriptor">Close\nVolt</string>
+    <string name="go_button_text">Go!</string>
+    <string name="switch_text">Audio Feedback</string>
+
+    <!-- Destinations Recycler View -->
+    <string name="recycler_view_content_descriptor">List of destinations</string>
+    <string name="drag_handle_image_view_content_descriptor">Drag</string>
+
+    <!-- Search View -->
+    <string name="search_view_hint">Search</string>
+
+    <!-- Voice Commands -->
+    <string name="title">Try Saying…</string>
+    <string name="add">Add [Destination]</string>
+    <string name="remove">Remove [Destination]</string>
+    <string name="show_on_map">Show [Destination] on Map</string>
+    <string name="go_to">Go to [Destination]</string>
+    <string name="start">Start Route</string>
+    <string name="stop">Stop</string>
+    <string name="men">Men\'s Toilet Nearby</string>
+    <string name="women">Women\'s Toilet Nearby</string>
+    <string name="elevator">Elevator Nearby</string>
+    <string name="audio_feedback">Audio Feedback On/Off</string>
+    <string name="commands">Show Voice Commands</string>
+    <string name="close">Close App</string>
+</resources>

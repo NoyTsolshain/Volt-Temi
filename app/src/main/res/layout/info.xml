@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F7F7F7">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp">
+
+    <!-- כותרת ראשית -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How to use the app"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textColor="#222222"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- סידור האזורים האופקיים -->
+    <LinearLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- עמודה 1 -->
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/elevator"
+            android:padding="16dp"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To select a destination for navigation, tap the desired location from the list."
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp"/>
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_example"
+                android:adjustViewBounds="true"
+                android:contentDescription="Menu Example"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can also select a destination directly from the map by tapping on it."
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp"/>
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_example"
+                android:adjustViewBounds="true"
+                android:contentDescription="Map Example"/>
+        </LinearLayout>
+
+        <!-- חץ לעמודה 2 -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="16dp"
+            android:src="@drawable/ic_arrow_right"
+            android:contentDescription="Arrow" />
+
+        <!-- עמודה 2 -->
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/cat"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="After tapping a destination, a content panel will open with information about it. You can choose to navigate directly or add it to your route."
+                android:textAlignment="center"
+                android:textColor="#333333"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="Content Example"
+                android:src="@drawable/content_panel" />
+        </LinearLayout>
+
+        <!-- חץ לעמודה 3 -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="16dp"
+            android:src="@drawable/ic_arrow_right"
+            android:contentDescription="Arrow" />
+
+        <!-- עמודה 3 -->
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/cat"
+            android:padding="16dp"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you’ve chosen a route, a list of destinations will appear on the right side. You can rearrange them before starting the trip. Then, press the 'Go!' button at the bottom of the screen to begin your journey."
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp"/>
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cat"
+                android:adjustViewBounds="true"
+                android:contentDescription="Route Example"/>
+        </LinearLayout>
+
+        <!-- חץ לעמודה 4 -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="16dp"
+            android:src="@drawable/ic_arrow_right"
+            android:contentDescription="Arrow" />
+
+        <!-- עמודה 4 -->
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/cat"
+            android:padding="16dp"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By tapping the speaker icon, you can give a voice command with the name of the destination you wish to reach."
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/speaker_icon"
+                android:contentDescription="Speaker Icon"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

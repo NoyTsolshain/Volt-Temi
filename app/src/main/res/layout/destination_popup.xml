@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DestinationPopupConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eggshell">
+
+    <ImageView
+        android:id="@+id/DestinationImageView"
+        android:layout_width="375dp"
+        android:layout_height="600dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cat" />
+
+    <ImageView
+        android:id="@+id/CloseImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/close_small" />
+
+    <TextView
+        android:id="@+id/DestinationNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:maxWidth="300dp"
+        android:minWidth="300dp"
+        android:text="@string/home_base_display"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/DestinationImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/GoNowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/go_now_button_text"
+        app:layout_constraintStart_toEndOf="@+id/DestinationImageView"
+        app:layout_constraintTop_toBottomOf="@+id/DestinationNameTextView" />
+
+    <Button
+        android:id="@+id/AddToListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/add_to_list_button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DestinationNameTextView" />
+
+    <View
+        android:id="@+id/LineView"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:background="@color/app_icon"
+        app:layout_constraintBottom_toTopOf="@+id/GoNowButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DestinationImageView"
+        app:layout_constraintTop_toBottomOf="@+id/DestinationNameTextView"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <TextView
+        android:id="@+id/DestinationDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:maxWidth="300dp"
+        android:minWidth="300dp"
+        android:text="@string/home_base_description"
+        app:layout_constraintStart_toStartOf="@+id/DestinationNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/GoNowButton" />
+
+    <TextView
+        android:id="@+id/BuildingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/fischbach_building"
+        app:layout_constraintStart_toStartOf="@+id/DestinationDescriptionTextView"
+        app:layout_constraintTop_toBottomOf="@+id/DestinationDescriptionTextView" />
+
+    <TextView
+        android:id="@+id/FloorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/floor_3"
+        app:layout_constraintStart_toStartOf="@+id/BuildingTextView"
+        app:layout_constraintTop_toBottomOf="@+id/BuildingTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
